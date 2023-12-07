@@ -1,1 +1,58 @@
 /* Put custom styles here */
+
+button {
+    font-size: 16px!important;
+}
+.comfy-menu-btns button {
+    font-size:12px!important;
+    width:auto;
+}
+.comfy-menu {
+    width: 240px;
+}
+.comfy-menu button, 
+.comfy-modal button {
+	font-size: 14px;
+    margin: 3px auto;
+}
+#queue-button {
+    font-size: 18px!important;
+    font-weight: bold;
+    color: red;
+}
+.comfy-modal-content {
+    font-size: 12px;
+}
+
+.cm-title {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.comfy-modal td,
+.comfy-modal th 
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+.comfy-menu label {
+    font-size: 12px;
+}
+.submenu {
+    font-size: 12px!important;
+}
+.comfy-multiline-input {
+    font-size: 12px;
+}
+.litegraph .graphdialog .value {
+    font-size: 14px!important;
+}
+.litegraph .graphdialog .name {
+    font-size: 14px!important;
+}
+.litesearchbox {
+    font-size: 12px!important;
+}
+.litegraph .graphdialog {
+    border-radius: 10px!important;
+}
