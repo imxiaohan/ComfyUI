@@ -1,4 +1,4 @@
 @echo off
 call .venv\Scripts\activate
-python main.py  --lowvram --preview-method auto --use-split-cross-attention
+python main.py --lowvram --dont-upcast-attention
 pause
