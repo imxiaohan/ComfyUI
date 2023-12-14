@@ -1,16 +1,17 @@
 __pycache__/
 *.py[cod]
-.vs
-.idea/
-.venv/
-.ci/
-.github/
+/.vscode/
+/.idea/
+/.venv/
+/.ci/
+/.github/
 /output/
 /input/
 !/input/example.png
 /models/
 /temp/
 /custom_nodes/
+/my_workflows
 !custom_nodes/example_node.py.example
 extra_model_paths.yaml
 /web/extensions/*
@@ -18,4 +19,3 @@ extra_model_paths.yaml
 !/web/extensions/core/
 /tests-ui/data/object_info.json
 *.log
-/my_workflows
