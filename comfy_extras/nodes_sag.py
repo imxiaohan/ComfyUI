@@ -58,7 +58,7 @@ def create_blur_map(x0, attn, sigma=3.0, threshold=1.0):
     attn = attn.reshape(b, -1, hw1, hw2)
     # Global Average Pool
     mask = attn.mean(1, keepdim=False).sum(1, keepdim=False) > threshold
-    ratio = round(math.sqrt(lh * lw / hw1))
+    ratio = math.ceil(math.sqrt(lh * lw / hw1))
     mid_shape = [math.ceil(lh / ratio), math.ceil(lw / ratio)]
 
     # Reshape
@@ -151,7 +151,7 @@ class SelfAttentionGuidance:
             (sag, _) = comfy.samplers.calc_cond_uncond_batch(model, uncond, None, degraded_noised, sigma, model_options)
             return cfg_result + (degraded - sag) * sag_scale
 
-        m.set_model_sampler_post_cfg_function(post_cfg_function)
+        m.set_model_sampler_post_cfg_function(post_cfg_function, disable_cfg1_optimization=True)
 
         # from diffusers:
         # unet.mid_block.attentions[0].transformer_blocks[0].attn1.patch
