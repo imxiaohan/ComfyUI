@@ -17,3 +17,4 @@ extra_model_paths.yaml
 !/web/extensions/core/
 /tests-ui/data/object_info.json
 *.log
+my_workflows/*
